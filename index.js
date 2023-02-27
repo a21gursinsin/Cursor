@@ -12,8 +12,6 @@ app.get('/', (req, res) => {
 });
 
 io.on('connection', (socket) => {
-    console.log('new conexion:  user ' + i + ' connected');
-
     socket.nom = i;
     i++;
 
